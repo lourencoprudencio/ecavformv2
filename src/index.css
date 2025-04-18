@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+  filter: invert(0.5);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  cursor: pointer;
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+  
+  .container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    display: none;
+  }
+}
